@@ -76,8 +76,8 @@ for i in range(4,13,2):
 
 
 print('-------')
-fig = figure(num=None, figsize=(8, 6), dpi=600, facecolor='w', edgecolor='k')
-ax = fig.add_axes([0,0,1,1])
+# fig = figure(num=None, figsize=(8, 6), dpi=600, facecolor='w', edgecolor='k')
+# ax = fig.add_axes([0,0,1,1])
 x_ticks = list(range(4,13,2))
 X = np.arange(len(x_ticks))
 plt.plot(X, bv_idles, linestyle='--', marker='x', color='y', label='bv')
@@ -87,12 +87,17 @@ plt.plot(X, qaoa_3reg_idles, linestyle='--', marker='o', color='c', label='3-reg
 plt.plot(X, qaoa_random_idles, linestyle='--', marker='+', color='m', label='rand')
 
 plt.legend(loc='best')
-ax.set_title('Idle times of different benchmarks on ibmq_montreal')
-ax.set_xticks(X)
-ax.set_xticklabels(x_ticks)
-ax.set_xlabel('Benchmark size')
-ax.set_ylabel('Idle time')
-plt.savefig('idle_time.pdf')
+plt.title('Idle times of different benchmarks on ibmq_montreal')
+plt.xlabel('Benchmark size')
+plt.ylabel('Idle time')
+plt.xticks(X)
+
+# ax.set_title('Idle times of different benchmarks on ibmq_montreal')
+# ax.set_xticks(X)
+# ax.set_xticklabels(x_ticks)
+# ax.set_xlabel('Benchmark size')
+# ax.set_ylabel('Idle time')
+plt.savefig('idle_time.png')
 
 plt.show()
 print(bv_idles)
