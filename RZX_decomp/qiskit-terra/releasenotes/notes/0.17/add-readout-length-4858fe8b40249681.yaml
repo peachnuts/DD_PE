@@ -1,6 +1,0 @@
----
-features:
-  - |
-    The :py:class:`~qiskit.providers.models.BackendProperties` class now
-    has a :meth:`~qiskit.providers.models.BackendProperties.readout_length`
-    method, which returns the readout length [sec] of the given qubit.
