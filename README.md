@@ -4,7 +4,7 @@ This repository contains all the scripts for our paper entitled "Effects of Dyna
 
 Please find our paper on [arxiv.2204.01471](https://arxiv.org/abs/2204.01471).
 ## Note
-1. We use `` to generate the 3-regular graph.
+1. We use `ReCirq` to generate the 3-regular graph.
 2. All the results for only evaluating DDs on different applications are included in [`src/DD`](https://github.com/peachnuts/DD_PE/tree/start/src/DD).
 3. All the results for evaluting DDs and pulse-efficient technique on QAOA are included in [`src/QAOA`](https://github.com/peachnuts/DD_PE/tree/start/src/QAOA).
 
