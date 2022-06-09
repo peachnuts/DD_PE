@@ -76,8 +76,6 @@ for i in range(4,13,2):
 
 
 print('-------')
-# fig = figure(num=None, figsize=(8, 6), dpi=600, facecolor='w', edgecolor='k')
-# ax = fig.add_axes([0,0,1,1])
 x_ticks = list(range(4,13,2))
 X = np.arange(len(x_ticks))
 plt.plot(X, bv_idles, linestyle='--', marker='x', color='y', label='bv')
@@ -89,7 +87,7 @@ plt.plot(X, qaoa_random_idles, linestyle='--', marker='+', color='m', label='ran
 plt.legend(loc='best')
 plt.title('Idle times of different benchmarks on ibmq_montreal')
 plt.xlabel('Benchmark size')
-plt.ylabel('Idle time')
+plt.ylabel('Idle time (dt)')
 plt.xticks(X)
 
 # ax.set_title('Idle times of different benchmarks on ibmq_montreal')
